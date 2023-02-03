@@ -1,0 +1,233 @@
+﻿html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Verdana, sans-serif;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+.profilepic{
+    border-radius: 10px;
+}
+h1 {
+  font-weight: 700;
+  color: #464646;
+  font-size: 30px;
+}
+
+h2 {
+  font-weight: 400;
+  color: #95989A;
+}
+
+p {
+  font-weight: 400;
+  color: #888;
+  font-size: 16px;
+}
+
+a, .links {
+  text-decoration: none;
+  color: #111;
+}
+
+u {
+  border-bottom: 1px dotted #111;
+  text-decoration: none;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content > img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.content {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+      padding: 50px;
+      padding-top: 20px;
+    }
+
+    .aboutme > p {
+      font-size: 14px;
+    }
+
+    .bargraph {
+      max-width: 75%;
+      max-height: 75%;
+    }
+}
+
+
+.container {
+  width: 100%;
+  background-color: #eee;
+}
+
+.item, li {
+  color: #111;
+  font-size: 18px;
+}
+
+.bargraph {
+  list-style: none;
+  padding-top: 20px;
+  width:560px;
+}
+
+ul.bargraph li {
+  height: 35px;
+  color: white;
+  text-align: left;
+  font-style: italic;
+  font-weight:bolder;
+  font-size: 14px;
+  line-height: 35px;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+
+ul.bargraph li.pepper {
+  background: #464646;
+  width:15%;
+  white-space: nowrap;
+}
+
+ul.bargraph li.sawyer {
+  background: #464646;
+  width:80%;
+  white-space: nowrap;
+}
+
+ul.bargraph li.website {
+  background: #464646;
+  width:40%;
+  white-space: nowrap;
+}
+
+ul.bargraph li.revamp{
+  background: #464646;
+  width: 60%;
+  white-space: nowrap;
+}
+
+.over{
+    color: #464646;
+}
+
+ul.collegecourses{
+  list-style: none;
+  padding-top: 20px;
+  width:560px;
+}
+
+ul.collegecourses li{
+  height: 35px;
+  color: white;
+  text-align: left;
+  font-style: italic;
+  font-weight:bolder;
+  font-size: 14px;
+  line-height: 35px;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+  background: #464646;
+  width:100%;
+  white-space: nowrap;
+}
+
+.contact {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact > h1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact > p {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #111;
+}
+
+.footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #eee;
+}

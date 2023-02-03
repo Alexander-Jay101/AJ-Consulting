@@ -8,24 +8,25 @@
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
+  background-color: #c8d8e4;
 }
 .profilepic{
     border-radius: 10px;
 }
 h1 {
   font-weight: 700;
-  color: #464646;
+  color: #000000;
   font-size: 30px;
 }
 
 h2 {
   font-weight: 400;
-  color: #95989A;
+  color: #000000;
 }
 
 p {
   font-weight: 400;
-  color: #888;
+  color: #000000;
   font-size: 16px;
 }
 
@@ -39,11 +40,15 @@ u {
   text-decoration: none;
 }
 
+.invert{
+  color: #ffffff;
+}
+
 .intro {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: #fff;
+  background: #cccccc;
   display: table;
   top: 0;
   background-size: cover;
@@ -59,11 +64,10 @@ u {
 .content > img {
   display: block;
   margin: 0 auto;
-  padding-top: 30px;
 }
 
 .content {
-  max-width: 750px;
+  max-width: 70%;
   margin: 0 auto;
   text-align: left;
   padding-left: 20px;
@@ -124,11 +128,14 @@ u {
 
 .container {
   width: 100%;
-  background-color: #eee;
+  background-color: #2b6777;
+}
+
+.container > .content > h1, .container > .content > h2, .container > .content > p, .container > .content > ul, .item{
+color: #f2f2f2;
 }
 
 .item, li {
-  color: #111;
   font-size: 18px;
 }
 
@@ -140,7 +147,7 @@ u {
 
 ul.bargraph li {
   height: 35px;
-  color: white;
+  color: black;
   text-align: left;
   font-style: italic;
   font-weight:bolder;
@@ -148,34 +155,31 @@ ul.bargraph li {
   line-height: 35px;
   padding: 0px 20px;
   margin-bottom: 5px;
+  background: #c8d8e4;
 }
 
 ul.bargraph li.pepper {
-  background: #464646;
   width:15%;
   white-space: nowrap;
 }
 
 ul.bargraph li.sawyer {
-  background: #464646;
   width:80%;
   white-space: nowrap;
 }
 
 ul.bargraph li.website {
-  background: #464646;
   width:40%;
   white-space: nowrap;
 }
 
 ul.bargraph li.revamp{
-  background: #464646;
   width: 60%;
   white-space: nowrap;
 }
 
 .over{
-    color: #464646;
+    color: #c8d8e4;
 }
 
 ul.collegecourses{
@@ -186,7 +190,7 @@ ul.collegecourses{
 
 ul.collegecourses li{
   height: 35px;
-  color: white;
+  color: black;
   text-align: left;
   font-style: italic;
   font-weight:bolder;
@@ -194,7 +198,7 @@ ul.collegecourses li{
   line-height: 35px;
   padding: 0px 20px;
   margin-bottom: 5px;
-  background: #464646;
+  background: #c8d8e4 ;
   width:100%;
   white-space: nowrap;
 }
@@ -229,5 +233,12 @@ ul.collegecourses li{
 .footer {
   text-align: center;
   padding: 25px;
-  background-color: #eee;
+  background-color: #f2f2f2;
+}
+
+.footercontrainer{
+  background: #f2f2f2;
+}
+.footertext{
+  color: #888888;
 }

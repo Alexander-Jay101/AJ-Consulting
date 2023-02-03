@@ -49,21 +49,37 @@ u {
   width: 100%;
   margin: auto;
   background: #cccccc;
-  display: table;
+  display: block;
   top: 0;
   background-size: cover;
 }
 
-.intro .inner {
-  display: table-cell;
+.intro > * {
   vertical-align: middle;
-  width: 100%;
-  max-width: none;
 }
 
-.content > img {
-  display: block;
-  margin: 0 auto;
+.inner {
+  display: inline-block;
+  width: 48%;
+}
+
+.inner > .content {
+margin: auto;
+width: 100%;
+}
+
+.profilephoto {
+  display: inline-block;
+  height: 96%;
+  max-width: 48%;
+  border-radius: 10px;
+  margin: 1%;
+  overflow: hidden;
+}
+
+.profilephoto > img { 
+  height: 100%; 
+  margin-left: -45%;
 }
 
 .content {
@@ -122,6 +138,9 @@ u {
     .bargraph {
       max-width: 75%;
       max-height: 75%;
+    }
+    .profilephoto {
+      display: none;
     }
 }
 

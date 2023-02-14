@@ -7,6 +7,7 @@ body{
 div{
     display: grid;
     align-content: center;
+    gap: 10px;
 }
 * {
     box-sizing: border-box;
@@ -21,18 +22,38 @@ div{
 .header {
     display: grid;
     grid-template-columns: minmax(100px,1fr) minmax(100px,10fr) minmax(100px,1fr);
-    gap: 10px;
     background-color: #5e7783;
     color: #112432;
 }
+.nav{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    place-items: center;
+}
+.navDiv{
+    background-color: #d0d1d3;
+    margin: 2px;
+    padding: 2% 5%;
+    border-radius: 5px;
+    width: 70%;
+    color: #112432;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+    .nav {
+      grid-column-start: 2;
+      grid-template-columns: repeat(4, 1fr);
+   }
+  }  
+
 img{
     max-width: 100%;
 } 
-
-#warning{
-    text-align: center;
-    text-decoration-line: underline;
-}
 
 #logo {
     grid-column-start: 3;

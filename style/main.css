@@ -16,7 +16,7 @@ div{
 .overview{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 7.5fr 0.5fr;
+    grid-template-rows: minmax(50px,15vh) minmax(100px,80vh) minmax(50px,10vh);
 }
 .header {
     display: grid;
@@ -40,7 +40,7 @@ img{
 
 .intro {
     display: grid;
-    grid-template-columns: minmax(240px, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
     place-items: center;
 }
@@ -52,4 +52,5 @@ img{
 .bar{
     background-color: #4d1635;
     grid-row-start: 3;
+    height: 50px;
 }

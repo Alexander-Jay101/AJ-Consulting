@@ -83,13 +83,17 @@
   }
 
   .overlay {
-    grid-column-start: 2;
+      grid-column-start: 1;
   }
  
   @media screen and (max-width: 750px) {
     
     .navigation {
       display: none;}
+
+    .overlay {
+        grid-column-start: 2;
+    }
     
     #mobileMenu {
       display: grid;

@@ -1,0 +1,97 @@
+/* MENU */
+.navigation{
+    grid-column-start: 2;
+}
+
+#mainMenu{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#mainMenu > a{
+  text-decoration: none;
+  color: #d0d1d3;
+}
+
+
+  #menuInput{
+    display: none;
+  }
+  
+  #mobileMenu {
+      grid-column-start: 1;
+      width: 10vh;
+      height: 10vh;
+      margin-left: 5vh;
+      display: none;
+      border: none;
+      background: linear-gradient(
+        to bottom, 
+        #4d1635, #4d1635 20%, 
+        #5e7783 20%, #5e7783 40%, 
+        #4d1635 40%, #4d1635 60%, 
+        #5e7783 60%, #5e7783 80%, 
+        #4d1635 80%, #4d1635 100%
+      );
+  }
+  
+  #mobileMenu #sideMenu {
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 200px;
+      height: 100%;
+      background-color: #4d1635;
+      transition: 0.3s;
+      padding: 0px 10px;
+      box-sizing: border-box;
+  }
+  
+  #mobileMenu h3 {
+    color: #d0d1d3;
+    font-size: 2.2rem;
+  }
+  
+  #mobileMenu ul {
+    padding-left: 0px;
+  }
+  
+  #mobileMenu li {
+    list-style-type: none;
+    line-height: 3rem;
+  }
+  
+  #mobileMenu a {
+    color: #d0d1d3;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  
+  #mobileMenu a:hover {
+    text-decoration: underline;
+  }
+  
+  #menuInput:checked + #mobileMenu #sideMenu {
+      visibility: visible;
+      left: 0;
+  }
+  #menuInput:checked ~ .overlay{
+     visibility: visible;
+    opacity: 0.4;
+  }
+
+  .overlay {
+    grid-column-start: 2;
+  }
+ 
+  @media screen and (max-width: 750px) {
+    
+    .navigation {
+      display: none;}
+    
+    #mobileMenu {
+      display: grid;
+    }
+  }

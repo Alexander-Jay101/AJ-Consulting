@@ -7,23 +7,34 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/navigation.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     </head>
     <body>
         <div class="overview">
             <div class="header">
-                <button id="menuButton">
-                    <nav id="menuSidebar">
-                        <h3>Menu</h3>
-                        <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Work Experience</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About</a></li>
-                        </ul>
-                    </nav>
-                </button>     
+                <div class="overlay"></div> 
+                <input type="checkbox" id="menuInput" class="menuShower" />
+                <label id="mobileMenu" for="menuInput">
+                  <nav id="sideMenu">
+                    <h3>Menu</h3>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Store</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </nav>
+                </label> 
+                <div class="navigation">
+                    <nav id="mainMenu">
+                        <a href="#">Home</a>
+                        <a href="#">Experience</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Contact</a>
+                      </nav>
+                </div>   
                 <div id="logo">
                     <img alt="AJ Consulting Logo" src="media/logo/Alexander Jay-logo-white-notag.png"/>
                 </div>

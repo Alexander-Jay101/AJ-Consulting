@@ -28,6 +28,9 @@ div{
 
 img{
     max-width: 100%;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 } 
 
 #logo {
@@ -49,4 +52,14 @@ img{
     background-color: #4d1635;
     grid-row-start: 3;
     height: 50px;
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }

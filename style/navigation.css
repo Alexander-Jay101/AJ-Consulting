@@ -6,14 +6,22 @@
 #mainMenu{
   display: grid;
   text-align: center;
+  font-size: 1.25em;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#mainMenu > a{
+#mainMenu a{
   text-decoration: none;
   color: #d0d1d3;
 }
 
+#mainMenu a:hover{
+  transform: scale(1.2);
+  transition: transform 0.25s ease-out;
+}
+#mainMenu a::after{
+  transform: scale(1);
+}
 
   #menuInput{
     display: none;
